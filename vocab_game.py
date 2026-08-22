@@ -105,7 +105,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 4: spell `_______`. 🍊 The fruit or the coulour.",
+    "ข้อ 4: spell `______`. 🍊 The fruit or the coulour.",
     value=st.session_state.ans4_val,
 )
 
