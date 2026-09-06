@@ -8,21 +8,21 @@ if "ans1_val" not in st.session_state:
     st.session_state.ans1_val = ""
 if "ans2_val" not in st.session_state:
     st.session_state.ans2_val = ""
-if "ans1_val" not in st.session_state:
+if "ans3_val" not in st.session_state:
     st.session_state.ans3_val = ""
-if "ans2_val" not in st.session_state:
+if "ans4_val" not in st.session_state:
     st.session_state.ans4_val = ""
-if "ans1_val" not in st.session_state:
+if "ans5_val" not in st.session_state:
     st.session_state.ans5_val = ""
-if "ans2_val" not in st.session_state:
+if "ans6_val" not in st.session_state:
     st.session_state.ans6_val = ""
-if "ans1_val" not in st.session_state:
+if "ans7_val" not in st.session_state:
     st.session_state.ans7_val = ""
-if "ans2_val" not in st.session_state:
+if "ans8_val" not in st.session_state:
     st.session_state.ans8_val = ""
-if "ans1_val" not in st.session_state:
+if "ans9_val" not in st.session_state:
     st.session_state.ans9_val = ""
-if "ans2_val" not in st.session_state:
+if "ans10_val" not in st.session_state:
     st.session_state.ans10_val = ""
 
 
