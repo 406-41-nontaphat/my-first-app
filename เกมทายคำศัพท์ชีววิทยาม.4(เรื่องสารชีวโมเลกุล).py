@@ -133,7 +133,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
         st.info("✨nice!")
     elif score >= 5:
         st.warning("⚠close")
-    elif score >= 3:
+    else:
         st.error("failed,do better")
 
 
