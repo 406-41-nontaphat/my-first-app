@@ -137,7 +137,7 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
         st.error("failed,do better")
 
 
-TOTAL_MINUTES = 2  # Set your target duration in minutes
+TOTAL_MINUTES = 45  # Set your target duration in minutes
 TOTAL_SECONDS = TOTAL_MINUTES * 60
 
 st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
