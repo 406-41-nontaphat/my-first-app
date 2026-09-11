@@ -137,17 +137,20 @@ def show_result_dialog(ans1, ans2, ans3, ans4, ans5, ans6, ans7, ans8, ans9, ans
         st.error("failed,do better")
 
 
-# ----------------------------------------------------
-# 1. ปุ่มเริ่มเล่นเกม
-# ----------------------------------------------------
+TOTAL_MINUTES = 2  # Set your target duration in minutes
+TOTAL_SECONDS = TOTAL_MINUTES * 60
+
 st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 
-# 2. แถบแสดงเวลานับถอยหลัง
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
-    time_left = int(180 - (time.time() - st.session_state.start))
+    elapsed_time = time.time() - st.session_state.start
+    time_left = int(TOTAL_SECONDS - elapsed_time)
 
     if time_left > 0:
-        st.error(f"⏳ เหลือเวลา: {time_left} วินาที")
+        minutes, seconds = divmod(time_left, 60)
+        st.error(f"⏳ เหลือเวลา: {minutes} นาที {seconds:02d} วินาที")
+        # Alternative digital format (e.g., 01:45):
+        # st.error(f"⏳ เหลือเวลา: {minutes:02d}:{seconds:02d}")
     else:
         st.session_state.is_ended = True
         st.rerun()
